@@ -5,3 +5,4 @@ From today I'll sort some classical algorithms into this repository.
 ####contents:
 * quick sort
 * binary search
+* merge sort
