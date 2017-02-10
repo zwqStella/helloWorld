@@ -6,3 +6,4 @@ From today I'll sort some classical algorithms into this repository.
 * quick sort
 * binary search
 * merge sort
+* round robin arrangement(2^n)
