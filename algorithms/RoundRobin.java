@@ -12,22 +12,22 @@ public class RoundRobin{
         }
         
         int m = 1; 
-        for(int s=1; s<=n; s++)  
+        for(int s=0; s<n; s++)  
         {  
         	teams /= 2;  
-            for(int t=1; t<=teams; t++)  
+            for(int t=0; t<teams; t++)  
             {  
-                for(int i=m+1; i<=2*m; i++) 
+                for(int i=m; i<2*m; i++) 		//row number
                 {  
-                    for(int j=m+1; j<=2*m; j++) 
+                    for(int j=m; j<2*m; j++) 		//line number
                     {  
-                        table[i][j+(t-1)*m*2] = table[i-m][j+(t-1)*m*2-m]; 
-                        table[i][j+(t-1)*m*2-m] = table[i-m][j+(t-1)*m*2]; 
+                        table[j+t*m*2][i] = table[j+t*m*2-m][i-m]; 
+                        table[j+t*m*2-m][i] = table[j+t*m*2][i-m]; 
                     }  
                       
                 }  
             }  
             m *= 2;  
-        }  
+        } 
     }  
 }
