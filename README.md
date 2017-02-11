@@ -7,3 +7,4 @@ From today I'll sort some classical algorithms into this repository.
 * binary search
 * merge sort
 * round robin arrangement(2^n)
+* single source shortest path(greedy algorithm)
