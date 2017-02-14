@@ -1,0 +1,71 @@
+
+/* 
+  *the simplest way to attribute jobs on different machines.
+*/
+
+class Job{
+    private int ID;
+    private int size;
+    
+    public Job(int ID,int size){
+        this.ID = ID;
+        this.size = size;
+    }
+    
+    @Override
+    public String toString(){
+        return "job" + ID;
+    }
+    
+    public int getID(){
+        return ID;
+    }
+    
+    public int getSize(){
+        return size;
+    }
+}
+
+ class Machine{
+     int ID;
+     int cap;
+     ArrayList<Job> jobs;    
+     
+     public Machine(int ID){
+         this.ID = ID;
+         this.cap = 0;
+         this.jobs = new ArrayList<Job>();
+     }
+     
+     public static int getMin(Machine[] machines){
+         int min = machines[0].cap;
+         int minIndex = 0;
+         for(int i = 0;i < machines.length ; i++){
+             if(machines[i].cap < min){
+                 min = machines[i].cap;
+                 minIndex = i;
+             }  
+             if(min == 0){
+                 return minIndex;
+             }
+         }
+         return minIndex;
+     } 
+      
+     public static void scheduling(Machine[] machines,Job[] jobs){
+         Machine current;
+         for(int i = 0;i < jobs.length; i++){
+            current = machines[getMin(machines)];
+            current.jobs.add(jobs[i]);
+            current.cap += jobs[i].getSize();
+         }
+         for(int i = 0;i < machines.length; i++){
+            System.out.print("Machin" + machines[i].ID + ":   ");
+            for(int j = 0;j < machines[i].jobs.size(); j++){
+                    System.out.print(machines[i].jobs.get(j) + ";");
+            }
+            System.out.println();
+         }
+         
+     }
+ }
