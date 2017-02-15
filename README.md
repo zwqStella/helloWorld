@@ -10,3 +10,4 @@ From today I'll sort some classical algorithms into this repository.
 * single source shortest path(greedy algorithm)
 * best changes  
 * job scheduling on machines
+* chorus formation
