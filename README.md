@@ -11,3 +11,4 @@ From today I'll sort some classical algorithms into this repository.
 * best changes  
 * job scheduling on machines
 * chorus formation
+* 0-1 bag
