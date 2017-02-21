@@ -18,4 +18,6 @@ From today I'll sort some classical algorithms into this repository.
 * eight queen problem
 
 Some ideas about apps:  
-1. Ten Thousand Hours   It's said that only if someone paid ten thousand hours on something can he or she become expert about that, but seldom do we know how much time we paid on something exactly. Why don't get an app to find out that?
+1. Ten Thousand Hours
+
+It's said that only if someone paid ten thousand hours on something can he or she become expert about that, but seldom do we know how much time we paid on something exactly. Why don't get an app to find out that?
