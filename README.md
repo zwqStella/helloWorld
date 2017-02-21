@@ -1,5 +1,6 @@
 # helloWorld
-### a repository to store fragmented ideas.
+### a repository to store fragmented ideas.  
+I'm zwqStella, a student of software engineering, working on programming now. I wish I can become a great engineer one day.  
 From today I'll sort some classical algorithms into this repository.
 
 ####contents:
