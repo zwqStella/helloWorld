@@ -13,3 +13,4 @@ From today I'll sort some classical algorithms into this repository.
 * chorus formation
 * 0-1 bag
 * eight queen problem
+* shell sort
