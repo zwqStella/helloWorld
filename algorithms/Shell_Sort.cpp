@@ -1,4 +1,4 @@
-// Algorithms.cpp : 定义控制台应用程序的入口点。
+// 好久没写C++了呢，都忘了的说，不过好怀念的感觉呢~
 //
 #include "stdafx.h"
 #include <iostream>
@@ -13,7 +13,7 @@ void Insert(int list[], int pointer, int temp);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int list[] = {1,7,23,77,3,4,5,6,2,4,12,4,54,12,9};
+	int list[] = {3,7,23,77,3,4,5,6,2,4,12,4,54,12,9};
 	int l = sizeof(list) / sizeof(list[0]);
 	Shell_Sort(list, l);
 	for (int i = 0; i < sizeof(list) / sizeof(list[0]); i++)
