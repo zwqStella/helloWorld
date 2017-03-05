@@ -17,6 +17,7 @@ From today I'll sort some classical algorithms into this repository.
 * 0-1 bag
 * eight queen problem
 * shell sort
+* use stream for collection operation
 
 
 Some ideas about apps:  
